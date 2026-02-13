@@ -5,65 +5,249 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jecintha Amuldoss | Software Test Engineer</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f4f4f4; }
-    h1, h2 { color: #222; }
-    .section { margin-bottom: 30px; }
-    .card { background: white; padding: 20px; border-radius: 10px; margin-top: 10px; }
-    a { color: #0b66c3; text-decoration: none; }
+    :root{
+      --bg:#0b0f19;
+      --card:#111827;
+      --text:#e5e7eb;
+      --muted:#aab1bd;
+      --link:#8ab4f8;
+      --border:#233047;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue";
+      line-height:1.65;
+    }
+    .wrap{
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    h1{ font-size: 40px; margin:0 0 8px; letter-spacing:0.2px; }
+    h2{ font-size: 22px; margin:34px 0 12px; }
+    h3{ font-size: 18px; margin:18px 0 8px; }
+    p{ margin: 0 0 12px; color: var(--text); }
+    .subtitle{ color: var(--muted); margin: 0 0 18px; }
+    a{ color: var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .btns{ display:flex; flex-wrap:wrap; gap:10px; margin: 14px 0 6px; }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border:1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      border-radius: 10px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .btn.primary{
+      background:#1f2937;
+      border-color:#2b3a55;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 16px;
+      margin: 10px 0;
+    }
+
+    .chips{ display:flex; flex-wrap:wrap; gap:8px; }
+    .chip{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size: 13px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    ul{ margin: 8px 0 0 20px; }
+    li{ margin: 6px 0; color: var(--text); }
+
+    .meta{
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .divider{
+      height:1px;
+      background: var(--border);
+      margin: 28px 0 18px;
+      opacity: .7;
+    }
+    .footer{
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 860px){
+      .two-col{ grid-template-columns: 1fr 1fr; }
+    }
   </style>
 </head>
+
 <body>
+  <main class="wrap">
+    <header>
+      <h1>Jecintha Amuldoss</h1>
+      <p class="subtitle">Software Test Engineer | Automation • API Testing • BDD • CI/CD | Dublin, Ireland</p>
 
-  <h1>Jecintha Amuldoss</h1>
-  <p>Software Test Engineer | Automation | CI/CD | Dublin, Ireland</p>
+      <div class="btns">
+        <!-- IMPORTANT: Upload your resume PDF to the repo as Resume.pdf (same folder as index.html) -->
+        <a class="btn primary" href="Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a class="btn" href="https://github.com/jecinthamuldoss-crypto" target="_blank" rel="noopener">View GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/jecintha-amuldoss-58bb92168" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        Software Test Engineer with 2+ years of experience in automation testing using Java, Selenium, Cucumber, and TestNG.
-        Experienced in API testing and CI/CD integration using Jenkins.
+      <p class="meta">
+        📧 <a href="mailto:dossjc19@gmail.com">dossjc19@gmail.com</a> &nbsp;|&nbsp;
+        📞 +353 899889243 &nbsp;|&nbsp;
+        Work Authorisation: Stamp 1G (Eligible for full-time work in Ireland)
       </p>
-    </div>
-  </div>
+    </header>
 
-  <div class="section">
-    <h2>Technical Skills</h2>
-    <div class="card">
-      <ul>
-        <li>Java, Selenium WebDriver</li>
-        <li>Cucumber (BDD), TestNG</li>
-        <li>Extent Reports, Maven</li>
-        <li>REST API Testing, Postman</li>
-        <li>Jenkins, Git & GitHub</li>
-        <li>SQL basics</li>
-      </ul>
-    </div>
-  </div>
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          Software Test Engineer with 2+ years of experience in manual and automation testing of web and cloud-based applications in Agile environments.
+          Strongly skilled in Java-based automation using Selenium WebDriver, Cucumber (BDD), TestNG, and Extent Reports for detailed execution reporting.
+          Hands-on experience in API testing and validation, CI/CD execution using Jenkins, and collaborating closely with developers to ensure high-quality releases.
+          Passionate about building scalable automation frameworks, improving test coverage, and delivering reliable software.
+        </p>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <div class="card">
-      <p><strong>Amazon Development Centre</strong> – Quality Service Associate</p>
-      <p><strong>Targetbay</strong> – Test Engineer (Sole QA)</p>
-    </div>
-  </div>
+    <section>
+      <h2>Skills</h2>
 
-  <div class="section">
-    <h2>Education</h2>
-    <div class="card">
-      <p>MBA – Cloud Computing (2026)</p>
-      <p>M.Sc. Computer Science (2021)</p>
-    </div>
-  </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>Automation & Programming</h3>
+          <div class="chips">
+            <span class="chip">Java</span>
+            <span class="chip">Selenium WebDriver</span>
+            <span class="chip">Cucumber (BDD)</span>
+            <span class="chip">TestNG</span>
+            <span class="chip">Extent Reports</span>
+            <span class="chip">Maven</span>
+          </div>
+        </div>
 
-  <div class="section">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:jecinthamuldoss@gmail.com">jecinthamuldoss@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/jecinthamuldoss-crypto" target="_blank">jecinthamuldoss-crypto</a></p>
-    </div>
-  </div>
+        <div class="card">
+          <h3>API & Backend Testing</h3>
+          <div class="chips">
+            <span class="chip">REST API Testing (Postman)</span>
+            <span class="chip">API validation & assertions</span>
+            <span class="chip">REST Assured (foundation)</span>
+          </div>
+        </div>
 
+        <div class="card">
+          <h3>CI/CD & Tools</h3>
+          <div class="chips">
+            <span class="chip">Jenkins</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">JIRA</span>
+            <span class="chip">TestRail</span>
+            <span class="chip">Confluence</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Testing Expertise</h3>
+          <div class="chips">
+            <span class="chip">Functional</span>
+            <span class="chip">Integration</span>
+            <span class="chip">Regression</span>
+            <span class="chip">End-to-End</span>
+            <span class="chip">Exploratory</span>
+            <span class="chip">UAT</span>
+            <span class="chip">Defect Tracking</span>
+            <span class="chip">Root Cause Analysis</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Database & Platforms</h3>
+          <div class="chips">
+            <span class="chip">SQL (SELECT, WHERE, JOIN)</span>
+            <span class="chip">Cloud-based systems</span>
+            <span class="chip">API-driven systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="card">
+        <h3>Quality Service Associate – AWS WorkSpaces</h3>
+        <p class="subtitle">Amazon Development Centre, Chennai, India | Sep 2022 – Nov 2023</p>
+        <ul>
+          <li>Designed and executed manual and automated test cases for cloud-based applications across functional and integration layers.</li>
+          <li>Developed and maintained Selenium automation scripts using Java and TestNG, supporting regression and sanity test suites.</li>
+          <li>Implemented BDD-style test scenarios using Cucumber, improving test readability and collaboration with stakeholders.</li>
+          <li>Integrated Extent Reports for detailed execution results, logs, and screenshots to improve visibility of automation outcomes.</li>
+          <li>Performed API testing and validations to ensure correct communication between backend services.</li>
+          <li>Supported CI/CD test execution in Jenkins, analysed failures, and improved test stability.</li>
+          <li>Actively participated in Agile ceremonies, contributing quality insights during sprint planning and refinement.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Test Engineer (Sole QA) – BayRewards Shopify Application</h3>
+        <p class="subtitle">Targetbay, Chennai, India | Nov 2023 – Aug 2024</p>
+        <ul>
+          <li>Owned end-to-end quality assurance for a production Shopify-based application.</li>
+          <li>Translated business requirements into clear test scenarios, acceptance criteria, and test cases.</li>
+          <li>Automated critical user flows using Selenium, Java, Cucumber, and TestNG, reducing repetitive manual effort.</li>
+          <li>Created and maintained Extent Reports to track execution results and share quality metrics with stakeholders.</li>
+          <li>Executed API testing to validate integrations and backend workflows.</li>
+          <li>Collaborated closely with developers to identify, reproduce, and resolve defects, including production issues.</li>
+          <li>Ensured quality gates were met before releases through structured regression testing and CI execution.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <ul>
+          <li><strong>MBA – Cloud Computing (2026)</strong>, Dublin Business School, Dublin, Ireland</li>
+          <li><strong>M.Sc. Computer Science (2021)</strong>, Bishop Heber College, Trichy, India</li>
+          <li><strong>B.Voc. Information Technology (2019)</strong>, Bishop Heber College, Trichy, India</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+      <div>dossjc19@gmail.com | <a href="https://www.linkedin.com/in/jecintha-amuldoss-58bb92168" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div>© <span id="y"></span> Jecintha Amuldoss</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
